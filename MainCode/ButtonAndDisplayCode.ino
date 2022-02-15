@@ -1,13 +1,7 @@
 #include <Debounce.h>
-#include <TM1637.h>
-
 
 const int shiftUp = 2;
 const int shiftDown = 3;
-
-int CLK = 4;
-int DIO = 5;
-TM1637 tm(CLK,DIO);
 
 
 int gear = 9;
@@ -28,9 +22,6 @@ void setup() {
     Serial.begin(9600);
     pinMode(shiftUp, INPUT);
     pinMode(shiftDown, INPUT); // Also works with INPUT_PULLUP
-    tm.init();
-    // set brightness; 0-7
-    tm.set(7);
 }
 
 void loop() {
@@ -64,12 +55,4 @@ void loop() {
     Serial.print(autoShift);
     Serial.print("   Gear:");
     Serial.println(gear);
-    tm.display(4,gear);
-
-    if (autoShift) {
-        tm.display(1,10);
-    } else {
-        tm.display(1,15);
-    }
-
 }
