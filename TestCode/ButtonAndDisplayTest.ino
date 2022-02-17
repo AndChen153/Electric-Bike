@@ -9,6 +9,7 @@
 const int shiftUp = 2;                      // pins for shifter buttons
 const int shiftDown = 3;
 
+
 TM1637Display display(CLK, DIO);            // create display object for tm1637 display
 
 // value for OFF on seven segment display
