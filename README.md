@@ -9,13 +9,6 @@ Modified unpowered bicycle that includes:
 - pneumatic shocks
 
 
-Useful Links:
-- https://maker.pro/arduino/tutorial/how-to-use-visual-studio-code-for-arduino
-- https://create.arduino.cc/projecthub/ryanchan/tm1637-digit-display-arduino-quick-tutorial-ca8a93
-- https://thepihut.com/blogs/raspberry-pi-tutorials/how-do-i-power-my-arduino
-- https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/
-
-
 Libraries:
 - https://github.com/wkoch/Debounce
 

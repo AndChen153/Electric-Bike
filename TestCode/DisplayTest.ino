@@ -4,6 +4,7 @@
 #define DIO 5
 
 TM1637Display display = TM1637Display(CLK, DIO);
+
 const uint8_t OFF[] = {
   SEG_A | SEG_B | SEG_C | SEG_D | SEG_E | SEG_F,   // O
   SEG_A | SEG_E | SEG_F | SEG_G,                   // F

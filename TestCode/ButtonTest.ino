@@ -30,6 +30,7 @@ void setup() {
 void loop() {
     upState = digitalRead(upButton.read());
     downState = digitalRead(downButton.read());
+
     shiftState = (upState && downState);
 
     if (shiftState != lastShiftState) {
